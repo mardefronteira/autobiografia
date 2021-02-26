@@ -1,0 +1,15 @@
+#estrela-sobre {
+  height: 15vh;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  display:inline;
+}
+
+#conteiner-sobre {
+  position: relative;
+  justify-content: flex-start;
+  left: 30vw;
+  display: block;
+  margin: auto;
+}

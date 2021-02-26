@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
   <head>
+    <!-- METADADOS -->
     <meta charset="utf-8">
     <title>Autobiografia de todas nós</title>
     <meta name="application-name" content="Autobiografia de todas nós">
@@ -8,43 +9,110 @@
     <meta name="description" content="Qual é a história das mulheres que trabalham com luz? O Autobiografia de Todas Nós é um espaço de escuta e de construção da memória dessas histórias.">
     <meta name="keywords" content="iluminação, luz, mulheres, teatro, técnica, curitiba, mapa, mapeamento">
 
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- FOLHAS DE ESTILO -->
     <link rel="stylesheet" href="estilo/base.css">
+    <link rel="stylesheet" href="estilo/inicial.css">
     <link rel="stylesheet" href="estilo/mapa.css">
+    <link rel="stylesheet" href="estilo/luzes.css">
     <link rel="stylesheet" href="estilo/menu.css">
-    <link rel="stylesheet" href="estilo/mesas.css">
     <link rel="stylesheet" href="estilo/sobre.css">
     <link rel="stylesheet" href="estilo/textos.css">
     <link rel="stylesheet" href="estilo/videos.css">
   </head>
   <body>
 
-    <div id="inicial">
-    </div>
+    <main>
+      <div id="inicial" class="pagina">
+        <section class="conteudo coluna">
+          <video id="apresentacao" src="videos/apresentação.m4v" controls autoplay poster="img/logo.svg"></video>
+        </section>
+      </div>
 
-    <div id="textos" class="esconder">
-    </div>
+      <div id="textos" class="pagina esconder">
+        <h1 class="subtitulo">Artigos/<br/>Textos</h1>
+      </div>
 
-    <div id="videos" class="esconder">
-    </div>
+      <div id="texto" class="pagina esconder">
+        <h1 class="titulo">Texto</h1>
+      </div>
 
-    <div id="mapa" class="esconder">
-    </div>
+      <div id="videos" class="pagina esconder">
+        <h1 class="subtitulo">Vídeos</h1>
+      </div>
 
-    <div id="sobre" class="esconder">
-    </div>
+      <div id="video" class="pagina esconder">
+        <h1 class="titulo">Vídeo</h1>
+      </div>
 
-    <div id="mesas" class="esconder">
-    </div>
+      <div id="mapa" class="pagina esconder">
+        <h1 class="subtitulo">Mapeamento</h1>
+      </div>
 
-    <div id="menu" class="esconder">
-    </div>
+      <div id="sobre" class="pagina esconder">
+        <section id="conteiner-sobre" class="coluna">
+          <img id="estrela-sobre" src="img/estrela.svg">
+          <h1 class="titulo">Sobre<br/>o<br/>Projeto</h1>
+        </section>
+      </div>
+    </main>
+
+    <!-- MENU -->
+    <nav id="menu" class="linha">
+      <img id="inicial-menu" class="item-menu" src="img/logo.svg" alt="Autobiografia de todas nós">
+      <ul id="nav-menu" class="linha menu">
+        <li id="videos-menu" class="item-menu">Vídeos</li>
+        <li id="textos-menu" class="item-menu">Textos</li>
+        <li id="mapa-menu" class="item-menu">Mapeamento</li>
+        <li id="sobre-menu" class="item-menu">Sobre</li>
+      </ul>
+      <img id="estrela-menu" src="img/estrela.svg">
+    </nav>
+
+    <!-- FUNDOS -->
+     <div id="inicial-fundo" class="fundo">
+        <img id="luz-inicial-1" class="luz" src="img/luzes/home1.png">
+        <img id="luz-inicial-2" class="luz" src="img/luzes/videos1.png">
+      </div>
+
+      <div id="videos-fundo" class="fundo esconder">
+        <img id="luz-videos-1" class="luz" src="img/luzes/videos1.png">
+      </div>
+
+      <div id="video-fundo" class="fundo esconder">
+        <img id="luz-video-1" class="luz" src="img/luzes/video1.png">
+        <img id="luz-video-2" class="luz" src="img/luzes/video2.png">
+      </div>
+
+      <div id="textos-fundo" class="fundo esconder">
+        <img id="luz-textos-1" class="luz" src="img/luzes/textos1.png">
+        <img id="luz-textos-2" class="luz" src="img/luzes/textos2.png">
+      </div>
+
+      <div id="texto-fundo" class="fundo esconder">
+        <img id="luz-texto-1" class="luz" src="img/luzes/texto1.png">
+        <img id="luz-texto-2" class="luz" src="img/luzes/texto2.png">
+        <img id="luz-texto-3" class="luz" src="img/luzes/texto3.png">
+      </div>
+
+      <div id="mapa-fundo" class="fundo esconder">
+        <img id="luz-mapa-1" class="luz" src="img/luzes/mapa1.png">
+        <img id="luz-mapa-2" class="luz" src="img/luzes/mapa2.png">
+      </div>
+
+      <div id="sobre-fundo" class="fundo esconder">
+        <img id="luz-sobre-1" class="luz" src="img/luzes/sobre1.png">
+        <img id="luz-sobre-2" class="luz" src="img/luzes/sobre2.png">
+        <img id="luz-sobre-3" class="luz" src="img/luzes/sobre3.png">
+      </div>
 
     <!-- COMPORTAMENTO -->
     <script type="text/javascript" src="scripts/base.js"></script>
     <script type="text/javascript" src="scripts/mapa.js"></script>
     <script type="text/javascript" src="scripts/menu.js"></script>
-    <script type="text/javascript" src="scripts/mesas.js"></script>
     <script type="text/javascript" src="scripts/sobre.js"></script>
     <script type="text/javascript" src="scripts/textos.js"></script>
     <script type="text/javascript" src="scripts/videos.js"></script>

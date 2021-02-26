@@ -1,0 +1,26 @@
+.luz {
+  position: absolute;
+  /* max-width: 100%; */
+  width: 100%;
+  z-index:-100;
+}
+
+.fundo {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+
+#inicial-fundo {
+  height:100vh;
+  overflow: hidden;
+}
+
+#luz-inicial-1 {
+  top:0;
+}
+
+#luz-inicial-2 {
+
+}

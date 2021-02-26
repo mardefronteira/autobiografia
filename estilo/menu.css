@@ -1,0 +1,32 @@
+#menu {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  border-bottom: var(--preto) solid 1px;
+  align-items: center;
+  z-index: 100;
+}
+
+.item-menu {
+  list-style: none;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.item-menu:hover {
+  opacity: .6;
+}
+
+#inicial-menu {
+  width: 18vw;
+  height: auto;
+  margin: 1vh 5vw;
+}
+
+#estrela-menu {
+  height: 6vh;
+  width: auto;
+  margin: 0 5vw
+}

@@ -1,0 +1,88 @@
+/* CORES */
+:root {
+  --cinza: #f3f4f2;
+  --preto: #000;
+  font-size: 2vw;
+}
+
+/* CORPO */
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  background-color: var(--cinza);
+  color: var(--preto);
+  text-align: left;
+}
+
+main {
+  position: absolute;
+  top: 20vh;
+  right: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.pagina {
+  position: relative;
+  width:100%;
+  height: auto;
+  padding: 3vh 5vw;
+}
+
+.esconder {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* FONTES */
+
+.negrito {
+  font-weight: bold;
+}
+
+.menu {
+  font-size: .8em;
+}
+
+.titulo {
+  font-size: 3em;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.corpo {
+  font-size: 1em;
+}
+
+.desc {
+  font-size: .7em;
+}
+
+/* FLEX */
+
+.coluna {
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  flex-direction: column;
+}
+
+.linha {
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  flex-direction: row;
+}

@@ -1,0 +1,10 @@
+#inicial {
+  padding: 0;
+  overflow: hidden;
+}
+
+#apresentacao {
+  align-self: center;
+  height:70vh;
+  width:auto;
+}
