@@ -27,11 +27,28 @@ function esconderTudo() {
   // esconder todos os fundos
   const fundos = document.getElementsByClassName('fundo');
   for (let fundo of fundos) fundo.classList.add('esconder');
+
+  // resetar mapeamento
+   apagarMapa();
 }
 
 function mostrarPagina(id) {
+  console.log(id);
+  switch(id) {
+    case 'inicial':
+      document.querySelector('#menu').classList.remove('fundo-menu');
+      break;
+    case 'mapa':
+      mapa();
+      break;
+    default:
+      document.querySelector('#menu').classList.add('fundo-menu');
+  }
+
+
   // localizar e mostrar página alvo e fundo
   const pagina = document.querySelector(`#${id}`);
+
   pagina.classList.remove('esconder');
   document.querySelector(`#${id}-fundo`).classList.remove('esconder');
 }

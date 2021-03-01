@@ -1,0 +1,16 @@
+.img-mapa{
+  height: 20vh;
+  width: auto;
+  border: 2px solid var(--preto);
+  border-radius: 3vh;
+  cursor: pointer;
+  margin: 1vh 1vh;
+}
+
+#etiqueta-mapa {
+  max-width:30%;
+  height: auto;
+  background-color: var(--cinza);
+  border: 1px solid var(--preto);
+  display:none;
+}

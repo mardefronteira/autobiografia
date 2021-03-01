@@ -24,3 +24,13 @@
 #luz-inicial-2 {
 
 }
+
+#luz-mapa-1 {
+  top:0;
+  left:0;
+}
+
+#luz-mapa-2 {
+  top:50%;
+  right:0;
+}
