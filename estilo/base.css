@@ -29,9 +29,9 @@ main {
 
 .pagina {
   position: relative;
-  width:100%;
+  width:80%;
   height: auto;
-  padding: 3vh 5vw;
+  margin: auto;
 }
 
 .esconder {

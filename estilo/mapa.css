@@ -1,5 +1,5 @@
 .img-mapa{
-  height: 20vh;
+  height: 15vh;
   width: auto;
   border: 2px solid var(--preto);
   border-radius: 3vh;
@@ -8,9 +8,58 @@
 }
 
 #etiqueta-mapa {
+  position: fixed;
   max-width:30%;
   height: auto;
   background-color: var(--cinza);
   border: 1px solid var(--preto);
-  display:none;
+  display:block;
+  padding:.5em 1em;
+  font-size: .5em;
+}
+
+#fotos-mapa {
+  width: 100%;
+  height: 50vh;
+}
+
+#perfil {
+  padding-top: 20vh;
+}
+
+.flex-perfil {
+  max-width: 30vw;
+  height: auto;
+}
+
+#titulo-perfil {
+  justify-content: center;
+  align-items: center;
+}
+
+#pronome-pessoa {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+#titulo-perfil-esq {
+  text-align: right;
+  align-self: flex-end;
+}
+
+#funcao-pessoa{
+  text-align: left;
+}
+
+#separador-perfil{
+  border: 1.5px solid var(--preto);
+  width: 30vh;
+  transform: rotate(90deg);
+}
+
+.foto-perfil {
+  align-self: center;
+  height: 100%;
+  width: auto;
+  margin: 2em;
 }

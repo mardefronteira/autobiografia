@@ -28,12 +28,14 @@
 }
 
 #luz-mapa-1 {
-  top:0;
-  left:0;
+  top:-50vh;
+  left:-50vw;
+  width: 200vw;
+  height: auto;
 }
 
 #luz-mapa-2 {
-  top:50%;
+  top:200vh;
   right:0;
 }
 

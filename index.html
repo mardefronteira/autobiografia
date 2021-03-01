@@ -51,12 +51,20 @@
       <div id="mapa" class="pagina esconder">
         <h1 class="subtitulo">Mapeamento</h1>
         <section id="fotos-mapa"></section>
-        <p id="etiqueta-mapa"></p>
+        <p id="etiqueta-mapa" class="esconder"></p>
         <section id="perfil">
-          <h2 id="nome-pessoa" class="subtitulo"></h2>
-          <p id="pronome-pessoa" class="subtitulo"></p>
-          <p id="funcao-pessoa" class="negrito corpo"></p>
-          <p id="sobre-pessoa" class="corpo"></p>
+          <div id="titulo-perfil" class="linha">
+            <div id="titulo-perfil-esq" class="coluna flex-perfil">
+              <h2 id="nome-pessoa" class="titulo"></h2>
+              <p id="pronome-pessoa" class=""></p>
+            </div>
+            <hr id="separador-perfil"/>
+            <p id="funcao-pessoa" class="negrito corpo flex-perfil"></p>
+          </div>
+          <div id="corpo-perfil" class="coluna">
+            <p id="sobre-pessoa" class="corpo"></p>
+          </div>
+
         </section>
       </div>
 
@@ -121,6 +129,7 @@
     <script type="text/javascript" src="scripts/base.js"></script>
     <script type="text/javascript" src="scripts/mapa.js"></script>
     <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="dados/perfis.js"></script>
     <script type="text/javascript" src="scripts/sobre.js"></script>
     <script type="text/javascript" src="scripts/textos.js"></script>
     <script type="text/javascript" src="scripts/videos.js"></script>
