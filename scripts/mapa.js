@@ -17,7 +17,7 @@ function mapa() {
 }
 
 function mostrarPessoa(id) {
-  console.log('mostrar '+id);
+  // document.querySelector(`#${id}`).classList.add('perfil-selecionado');
   document.querySelector('#nome-pessoa').innerHTML = `NOME ${id}`;
   document.querySelector('#pronome-pessoa').innerHTML = `(pronome / ${id})`;
   document.querySelector('#funcao-pessoa').innerHTML = `Funções que a ${id} desempenha`;
@@ -32,4 +32,9 @@ function apagarMapa() {
     <p id="funcao-pessoa" class="negrito corpo"></p>
     <p id="sobre-pessoa" class="corpo"></p>
   `;
+}
+
+function mostrarEtiqueta(id) {
+  const etiqueta = document.querySelector('#etiqueta-mapa');
+  etiqueta.innerHTML = id;
 }
