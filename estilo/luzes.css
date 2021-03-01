@@ -36,3 +36,18 @@
   top:50%;
   right:0;
 }
+
+#luz-sobre-1 {
+  top:0;
+  right:0;
+}
+
+#luz-sobre-2 {
+  top:100vh;
+  left:0;
+}
+
+#luz-sobre-3 {
+  top:200vh;
+  right:0;
+}

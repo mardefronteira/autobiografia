@@ -14,6 +14,8 @@ function mapa() {
 
     document.querySelector('#fotos-mapa').appendChild(imagem);
   }
+
+  mapaAberto = true;
 }
 
 function mostrarPessoa(id) {
@@ -24,15 +26,15 @@ function mostrarPessoa(id) {
   document.querySelector('#sobre-pessoa').innerHTML = `Falando um monte sobre a ${id}! Bla bla blaaaaaaaa`;
 }
 
-function apagarMapa() {
-  document.querySelector('#fotos-mapa').innerHTML = '';
-  document.querySelector('#perfil').innerHTML = `
-    <h2 id="nome-pessoa" class="subtitulo"></h2>
-    <p id="pronome-pessoa" class="subtitulo"></p>
-    <p id="funcao-pessoa" class="negrito corpo"></p>
-    <p id="sobre-pessoa" class="corpo"></p>
-  `;
-}
+// function apagarMapa() {
+//   document.querySelector('#fotos-mapa').innerHTML = '';
+//   document.querySelector('#perfil').innerHTML = `
+//     <h2 id="nome-pessoa" class="subtitulo"></h2>
+//     <p id="pronome-pessoa" class="subtitulo"></p>
+//     <p id="funcao-pessoa" class="negrito corpo"></p>
+//     <p id="sobre-pessoa" class="corpo"></p>
+//   `;
+// }
 
 function mostrarEtiqueta(id) {
   const etiqueta = document.querySelector('#etiqueta-mapa');

@@ -1,4 +1,5 @@
 let itensMenu;
+let mapaAberto = false;
 
 function configurarMenu() {
   itensMenu = document.getElementsByClassName('item-menu');
@@ -29,7 +30,7 @@ function esconderTudo() {
   for (let fundo of fundos) fundo.classList.add('esconder');
 
   // resetar mapeamento
-   apagarMapa();
+  // apagarMapa();
 }
 
 function mostrarPagina(id) {
@@ -39,12 +40,13 @@ function mostrarPagina(id) {
       document.querySelector('#menu').classList.remove('fundo-menu');
       break;
     case 'mapa':
-      mapa();
+      mapaAberto ? '' : mapa();
       break;
     default:
       document.querySelector('#menu').classList.add('fundo-menu');
   }
 
+  window.scrollTo(0,0);
 
   // localizar e mostrar página alvo e fundo
   const pagina = document.querySelector(`#${id}`);
