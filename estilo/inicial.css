@@ -4,7 +4,21 @@
 }
 
 #apresentacao {
-  align-self: center;
-  height:80vh;
-  width:auto;
+  height: 80vh;
+  width: auto;
+}
+
+@media screen and (max-width: 800px) {
+  #apresentacao {
+    width: 100%;
+    height: auto;
+  }
+
+  .conteudo {
+    height: 90vh;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 }

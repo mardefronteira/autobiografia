@@ -8,7 +8,7 @@
 /* CORPO */
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   padding: 0;
   height: auto;
@@ -20,7 +20,7 @@ body {
 
 main {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   right: 0;
   left: 0;
   overflow-y: auto;
@@ -29,7 +29,7 @@ main {
 
 .pagina {
   position: relative;
-  width:80%;
+  width: 80%;
   height: auto;
   margin: auto;
 }
@@ -45,10 +45,6 @@ main {
 
 .negrito {
   font-weight: bold;
-}
-
-.menu {
-  font-size: .8em;
 }
 
 .titulo {
@@ -68,7 +64,7 @@ main {
 }
 
 .desc {
-  font-size: .7em;
+  font-size: 0.7em;
 }
 
 /* FLEX */
@@ -85,4 +81,24 @@ main {
   -ms-flex: 1;
   flex: 1;
   flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    top: 7vh;
+  }
+  .pagina {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: auto;
+  }
+
+  .corpo {
+    font-size: 1.5em;
+  }
+
+  .desc {
+    font-size: 1em;
+  }
 }

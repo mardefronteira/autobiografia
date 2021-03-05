@@ -1,9 +1,9 @@
 #menu {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   right: 0;
-  height: 20vh;
+  height: 15vh;
   border-bottom: var(--preto) solid 1px;
   align-items: center;
   z-index: 100;
@@ -20,17 +20,52 @@
 }
 
 .item-menu:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 #inicial-menu {
-  width: 18vw;
-  height: auto;
+  height: 90%;
+  width: auto;
   margin: 1vh 5vw;
 }
 
 #estrela-menu {
   height: 6vh;
   width: auto;
-  margin: 0 5vw
+  margin: 0 5vw;
+}
+
+.menu {
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 800px) {
+  #inicial-menu {
+    height: 90%;
+    width: auto;
+    margin: 2% 5%;
+  }
+
+  #menu {
+    height: 5vh;
+  }
+
+  .item-menu {
+    margin: 0.5em;
+  }
+
+  #estrela-menu {
+    height: 3vh;
+    width: auto;
+    margin: 0 3%;
+  }
+
+  .menu {
+    font-size: 1.5em;
+  }
+
+  #nav-menu {
+    margin: 0;
+    padding: 0;
+  }
 }

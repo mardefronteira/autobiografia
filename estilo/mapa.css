@@ -1,21 +1,21 @@
-.img-mapa{
+.img-mapa {
   height: 15vh;
   width: auto;
-  border: 2px solid var(--preto);
-  border-radius: 3vh;
+  border: 1px solid var(--preto);
+  border-radius: 10px;
   cursor: pointer;
   margin: 1vh 1vh;
 }
 
 #etiqueta-mapa {
   position: fixed;
-  max-width:30%;
+  max-width: 30%;
   height: auto;
   background-color: var(--cinza);
   border: 1px solid var(--preto);
-  display:block;
-  padding:.5em 1em;
-  font-size: .5em;
+  display: block;
+  padding: 0.5em 1em;
+  font-size: 0.5em;
 }
 
 #fotos-mapa {
@@ -47,11 +47,11 @@
   align-self: flex-end;
 }
 
-#funcao-pessoa{
+#funcao-pessoa {
   text-align: left;
 }
 
-#separador-perfil{
+#separador-perfil {
   border: 1.5px solid var(--preto);
   width: 30vh;
   transform: rotate(90deg);
@@ -59,7 +59,39 @@
 
 .foto-perfil {
   align-self: center;
-  height: 100%;
-  width: auto;
+  width: 70%;
+  height: auto;
   margin: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .img-mapa {
+    height: 8vh;
+    border: 1px solid var(--preto);
+    margin: 0.5vh 0.5vw;
+  }
+
+  #etiqueta-mapa {
+    display: none;
+  }
+
+  #fotos-mapa {
+    width: 90vw;
+    height: auto;
+  }
+
+  #perfil {
+    padding-top: 10vh;
+  }
+
+  #separador-perfil {
+    border: 1.5px solid var(--preto);
+    width: 10vh;
+    transform: rotate(90deg);
+  }
+
+  .foto-perfil {
+    height: auto;
+    width: 100%;
+  }
 }
