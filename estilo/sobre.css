@@ -1,15 +1,59 @@
 #estrela-sobre {
-  height: 15vh;
+  height: 13vh;
   width: auto;
   padding: 0;
   margin: 0;
-  display:inline;
+  display: inline;
 }
 
-#conteiner-sobre {
+#titulo-sobre {
   position: relative;
-  justify-content: flex-start;
-  left: 30vw;
+  left: 27vw;
   display: block;
   margin: auto;
+  height: 80vh;
+}
+
+#corpo-sobre {
+  position: relative;
+  display: block;
+  margin: 0 10vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.noventa-graus {
+  transform: rotate(90deg);
+}
+
+.seta-sobre {
+  height: 6vh;
+  width: auto;
+}
+
+#seta-1-sobre {
+  padding: 10vh 15vw;
+}
+
+#seta-2-sobre {
+  display: flex;
+  padding: 10vh 25vw;
+}
+
+#circulo-sobre {
+  display: flex;
+  align-self: center;
+  width: 80%;
+  height: auto;
+}
+
+#creditos-sobre {
+  margin-top: 10vh;
+}
+
+@media screen and (max-width: 800px) {
+  #estrela-sobre {
+    height: 5vh;
+    padding: 2vh 0;
+  }
 }

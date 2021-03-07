@@ -16,6 +16,7 @@ body {
   background-color: var(--cinza);
   color: var(--preto);
   text-align: left;
+  line-height: 1;
 }
 
 main {
@@ -27,11 +28,24 @@ main {
   overflow-x: hidden;
 }
 
+blockquote {
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.5;
+}
+
 .pagina {
+  padding-top: 5vh;
   position: relative;
   width: 80%;
   height: auto;
   margin: auto;
+  overflow: hidden;
 }
 
 .esconder {
@@ -60,11 +74,12 @@ main {
 }
 
 .corpo {
-  font-size: 1em;
+  font-size: 0.7em;
+  line-height: 1.5;
 }
 
 .desc {
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
 /* FLEX */
@@ -87,6 +102,11 @@ main {
   main {
     top: 7vh;
   }
+
+  .titulo {
+    font-size: 6em;
+  }
+
   .pagina {
     position: relative;
     width: 95%;
@@ -95,10 +115,10 @@ main {
   }
 
   .corpo {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .desc {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }

@@ -30,7 +30,7 @@ function mapa() {
 
 function mostrarPessoa(id) {
   // encontrar perfil alvo
-  let perfil = perfis[id.split("-")[1]];
+  let perfil = perfis[id.split("-")[1] - 1];
 
   // apagar fotos do perfil anterior
   document.querySelector("#fotos-perfil").innerHTML = "";
@@ -44,29 +44,27 @@ function mostrarPessoa(id) {
   ).innerHTML = `Funções: ${perfil.funcao}`;
   document.querySelector("#sobre-pessoa").innerHTML = perfil.bio;
 
-  perfil.citacao !== ""
-    ? (document.querySelector("#citacao-pessoa").innerHTML = perfil.citacao)
-    : "";
+  document.querySelector("#citacao-pessoa").innerHTML =
+    perfil.citacao !== "" ? perfil.citacao : "";
 
-  perfil.contato !== ""
-    ? (document.querySelector(
-        "#contato-pessoa"
-      ).innerHTML = `Contato: ${perfil.contato}`)
-    : "";
+  document.querySelector("#contato-pessoa").innerHTML =
+    perfil.contato !== "" ? `Contato: ${perfil.contato}` : "";
 
-  perfil.portfolio !== ""
-    ? (document.querySelector(
-        "#portfolio-pessoa"
-      ).innerHTML = `Portfolio: ${perfil.portfolio}`)
-    : "";
+  document.querySelector("#portfolio-pessoa").innerHTML =
+    perfil.portfolio !== "" ? `Portfolio: ${perfil.portfolio}` : "";
 
-  // caso existam, mostrar fotos
+  // caso existam, mostrar fotos e legendas
   for (let foto of perfil.fotos) {
     if (foto !== perfil.fotos[0]) {
       const img = document.createElement("IMG");
       img.src = `img/perfis/${perfil.id}/${foto}`;
       img.classList.add("foto-perfil");
       document.querySelector("#fotos-perfil").appendChild(img);
+
+      const legenda = document.createElement("P");
+      legenda.innerHTML = perfil.legendas[perfil.fotos.indexOf(foto)];
+      legenda.classList.add("desc");
+      document.querySelector("#fotos-perfil").appendChild(legenda);
     }
   }
 
@@ -80,7 +78,7 @@ function mostrarPessoa(id) {
 }
 
 function mostrarEtiqueta(id) {
-  const perfil = perfis[id.split("-")[1]];
+  const perfil = perfis[id.split("-")[1] - 1];
   const etiqueta = document.querySelector("#etiqueta-mapa");
   etiqueta.innerHTML = perfil.nome;
   etiqueta.classList.remove("esconder");

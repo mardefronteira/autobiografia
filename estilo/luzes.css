@@ -12,6 +12,10 @@
   left: 0;
   right: 0;
   pointer-events: none;
+  /* width: 100vh; */
+  /* height: auto; */
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
 }
 
 #inicial-fundo {
@@ -26,15 +30,19 @@
 #luz-inicial-2 {
 }
 
+#mapa-fundo {
+  /* overflow-x: hidden; */
+}
+
 #luz-mapa-1 {
-  top: -50vh;
-  left: -50vw;
-  width: 200vw;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: auto;
 }
 
 #luz-mapa-2 {
-  top: 200vh;
+  top: 100vh;
   right: 0;
 }
 
@@ -51,6 +59,16 @@
 #luz-sobre-3 {
   top: 200vh;
   right: 0;
+}
+
+#videos-fundo,
+#textos-fundo {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#luz-videos-1 {
+  top: -60%;
 }
 
 @media screen and (max-width: 800px) {
@@ -91,5 +109,17 @@
   #luz-sobre-3 {
     top: 100vh;
     right: 0;
+  }
+
+  #luz-videos-1 {
+    top: 0;
+  }
+
+  #luz-textos-1 {
+    top: 0;
+  }
+
+  #luz-textos-2 {
+    top: 30vh;
   }
 }
