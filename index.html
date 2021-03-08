@@ -52,17 +52,31 @@
     <main>
       <div id="inicial" class="pagina">
         <section class="conteudo coluna">
-          <video
+          <!-- <video
             id="apresentacao"
             src="videos/apresentação.m4v"
             controls="controls"
             poster="img/logo.svg"
-          ></video>
+          ></video> -->
+          <img id="apresentacao" src="img/logo.svg" alt="Logo do projeto" />
         </section>
       </div>
 
-      <div id="textos" class="pagina esconder">
-        <h1 class="subtitulo">Artigos/<br />Textos</h1>
+      <div id="textos" class="pagina esconder corpo">
+        <h1 class="subtitulo">Vídeos</h1>
+        <p>• A partir de <span class="negrito">15 de Março</span>:</p>
+        <p>
+          <span class="negrito">Ensaio “A história de quem agiu no breu”</span>,
+          escrito por Gabriela Valcanaia.
+        </p>
+        <p>
+          Partindo da vivência e memórias pessoais como artista e iluminadora,
+          Gabriela Valcanaia faz uma reflexão mais abrangente no ensaio textual,
+          onde ela expande o diálogo sobre como a trajetória das mulheres foi
+          retratada ao longo de milhares de anos de humanidade sob um regime
+          patriarcal, e as consequências desse apagamento histórico para as
+          profissionais mulheres e artistas contemporâneas.
+        </p>
       </div>
 
       <div id="em-breve" class="pagina esconder">
@@ -76,8 +90,34 @@
         <h1 class="titulo">Texto</h1>
       </div>
 
-      <div id="videos" class="pagina esconder">
+      <div id="videos" class="pagina esconder corpo">
         <h1 class="subtitulo">Vídeos</h1>
+        <p>
+          • A partir de <span class="negrito">12 de Março</span>:<br />
+          <span class="negrito">Entrevistas via zoom</span> com as iluminadoras
+          Semy Monastier, Lucri Reggiani, entrevistadas pela também iluminadora
+          Nina Rosa Sá.
+        </p>
+        <p>
+          • A partir de <span class="negrito">15 de Março</span>:<br />
+          <span class="negrito">Mini documentário “Depois de Nós”</span>, é
+          construído a partir de conversas com as iluminadoras Nadja Naira,
+          Nadia Luciani, Semy Monastier, Lucri Reggiani, Fábia Regina e Gabriela
+          Valcanaia e de imagens das profissionais no dia a dia do fazer teatral
+          com iluminação. Quando tudo começou? Quais foram os desafios? O que é
+          ser uma mulher iluminadora? Esses são alguns dos questionamentos
+          trazidos pelo doc, que se propõe a contar histórias e registrar
+          memórias. E pensar como ser mulher hoje e projetar um futuro possível.
+        </p>
+        <p>
+          • A partir de <span class="negrito">20 de Março</span>:<br /><span
+            class="negrito"
+            >Rodas de conversas</span
+          >
+          sobre como começar na iluminação cênica e sobre o trabalho dobrado de
+          ser mulher na luz, que contarão com janela de LIBRAS para garantir a
+          acessibilidade da comunidade surda.
+        </p>
       </div>
 
       <div id="video" class="pagina esconder">
@@ -87,6 +127,16 @@
       <div id="mapa" class="pagina esconder">
         <h1 class="subtitulo">Mapeamento</h1>
         <section id="fotos-mapa"></section>
+        <div id="botao-form" class="centralizar">
+          <a
+            id="link-form"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfrrYQLdZCm60i2XtlNre0Ml2V3ERN8OQC9jXIXb-mwWx3rNg/viewform"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Faça parte do mapeamento!
+          </a>
+        </div>
         <p id="etiqueta-mapa" class="esconder"></p>
         <article id="perfil" class="esconder">
           <header id="titulo-perfil" class="linha">
@@ -135,11 +185,13 @@
             projeto feito por mulheres para todas, todes e todos.
           </p>
 
-          <img
-            id="seta-2-sobre"
-            class="noventa-graus seta-sobre"
-            src="img/seta.svg"
-          />
+          <div class="centralizar">
+            <img
+              id="seta-2-sobre"
+              class="noventa-graus seta-sobre"
+              src="img/seta.svg"
+            />
+          </div>
           <br />
           <img
             id="circulo-sobre"
@@ -240,6 +292,13 @@
             </li>
             <li>
               Quintal Produções (Gabriel Muellers)
+            </li>
+            <li>
+              <img
+                id="logos"
+                src="img/logos.png"
+                alt="Logos dos apoiadores do projeto"
+              />
             </li>
           </ul>
         </section>

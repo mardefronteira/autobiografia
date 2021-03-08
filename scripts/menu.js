@@ -34,21 +34,18 @@ function esconderTudo() {
 }
 
 function mostrarPagina(id) {
+  const menu = document.querySelector("#menu");
   // adicionar fundo opaco ao menu
-  document.querySelector("#menu").classList.add("fundo-menu");
+  id === "inicial"
+    ? menu.classList.remove("fundo-menu")
+    : menu.classList.add("fundo-menu");
 
-  if (["videos", "textos"].includes(id)) {
-    document.querySelector(`#em-breve`).classList.remove("esconder");
-    document.querySelector("#menu").classList.remove("fundo-menu");
-  } else {
-    // localizar e mostrar página alvo e fundo
-    document.querySelector(`#${id}`).classList.remove("esconder");
-  }
+  // localizar e mostrar página alvo e fundo
+  document.querySelector(`#${id}`).classList.remove("esconder");
   document.querySelector(`#${id}-fundo`).classList.remove("esconder");
 
   switch (id) {
     case "inicial":
-      document.querySelector("#menu").classList.remove("fundo-menu");
       break;
     case "mapa":
       mapaAberto ? "" : mapa();

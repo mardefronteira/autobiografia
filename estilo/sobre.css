@@ -36,8 +36,8 @@
 }
 
 #seta-2-sobre {
-  display: flex;
-  padding: 10vh 25vw;
+  /* display: flex; */
+  margin: 10vh 0;
 }
 
 #circulo-sobre {
@@ -49,6 +49,12 @@
 
 #creditos-sobre {
   margin-top: 10vh;
+}
+
+#logos {
+  width: 100%;
+  height: auto;
+  margin-top: 5vh;
 }
 
 @media screen and (max-width: 800px) {
