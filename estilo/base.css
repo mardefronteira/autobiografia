@@ -98,6 +98,30 @@ ul {
   flex-direction: row;
 }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes infiniteRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+/* Standard syntax */
+@keyframes infinite-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+.rotate-element {
+  -webkit-animation: infiniteRotate 20s linear infinite; /* Safari */
+  animation: infiniteRotate 20s linear infinite;
+}
+
 @media screen and (max-width: 800px) {
   main {
     top: 7vh;
