@@ -31,4 +31,10 @@ function iniciar() {
       etiqueta.style.left = `${mouse.x}px`;
     }
   });
+
+  const videoApresentação = document.querySelector("#apresentacao");
+
+  videoApresentação.addEventListener("ended", () => {
+    videoApresentação.load();
+  });
 }
