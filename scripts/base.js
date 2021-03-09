@@ -7,6 +7,7 @@ let mouse = {
 
 function iniciar() {
   configurarMenu();
+  mapa();
 
   window.addEventListener("mousemove", (e) => {
     e = e || window.event;

@@ -222,7 +222,7 @@ const perfis = [
       "",
       "“A história de um certo Zé” (2019). Iluminadora. Foto: Carol Pellegrini.",
       "“LAMPIÃO” (2019). Iluminadora. Foto: Eduardo Chifon.",
-      "“Principía” (2018). Iluminadora. Foto: Eduardo Ramos.",
+      "“Principía” (2018). Iluminadora. Foto: Jango Fonseca.",
     ],
     contato:
       "instagram: <a href='https://instagram.com/juli_s_rosa' rel='noopener noreferrer' target='_blank'>@juli_s_rosa</a> ou <a href='https://instagram.com/grupochordata' rel='noopener noreferrer' target='_blank'>@grupochordata</a> | +55 (41)991827829",
@@ -487,7 +487,7 @@ const perfis = [
       "",
       "“Exodus”. Iluminadora. Foto: Lidia Ueta.",
       "“Ex-Macchina”. Iluminadora. Foto: Humberto Araújo.",
-      "“Pinheiros”. Iluminadora.",
+      "“Pinheiros e Precipícios”. Atriz: Patrícia Saravy. Iluminadora: Semy Monastier.",
     ],
     contato: "email: patriciasaravy@gmail.com",
     portfolio: "",
@@ -509,7 +509,7 @@ const perfis = [
     legendas: [
       "",
       "“Cabaret Machina”. Iluminadora. Foto: Victor Natureza.",
-      "“Luxuosas”. Iluminadora. Foto: Cibele Gaidus.",
+      "“LUXOSAS FICÇÕES PARA O FRACASSO”. Iluminadora. Foto: Cibele Gaidus.",
       "“América”. Iluminadora. Foto: Humberto Martins.",
     ],
     contato:

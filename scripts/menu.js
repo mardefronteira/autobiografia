@@ -44,14 +44,14 @@ function mostrarPagina(id) {
   document.querySelector(`#${id}`).classList.remove("esconder");
   document.querySelector(`#${id}-fundo`).classList.remove("esconder");
 
-  switch (id) {
-    case "inicial":
-      break;
-    case "mapa":
-      mapaAberto ? "" : mapa();
-      break;
-    default:
-  }
+  // switch (id) {
+  //   case "inicial":
+  //     break;
+  //   case "mapa":
+  //     mapaAberto ? "" : mapa();
+  //     break;
+  //   default:
+  // }
 
   window.scrollTo(0, 0);
 }
