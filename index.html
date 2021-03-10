@@ -54,11 +54,13 @@
         <section class="conteudo coluna">
           <video
             id="apresentacao"
-            src="videos/apresentação.mov"
-            controls="controls"
+            width="1280"
+            height="720"
             poster="img/logo.svg"
             preload="auto"
-          >
+            controls
+          />
+          <source src="videos/apresentação.mp4" type="video/mp4">
             <track
               default
               kind="captions"
@@ -70,7 +72,7 @@
       </div>
 
       <div id="textos" class="pagina esconder corpo">
-        <h1 class="subtitulo">Vídeos</h1>
+        <h1 class="subtitulo">Textos</h1>
         <p>• A partir de <span class="negrito">15 de Março</span>:</p>
         <p>
           <span class="negrito">Ensaio “A história de quem agiu no breu”</span>,
@@ -86,18 +88,11 @@
         </p>
       </div>
 
-      <div id="em-breve" class="pagina esconder">
-        <section id="conteiner-sobre" class="coluna">
-          <img id="estrela-sobre" src="img/estrela.svg" />
-          <h1 class="titulo">Em<br />Breve</h1>
-        </section>
-      </div>
-
       <div id="texto" class="pagina esconder">
         <h1 class="titulo">Texto</h1>
       </div>
 
-      <div id="videos" class="pagina esconder corpo">
+      <div id="videos-em-breve" class="pagina esconder corpo">
         <h1 class="subtitulo">Vídeos</h1>
         <p>
           • A partir de <span class="negrito">12 de Março</span>:<br />
@@ -125,6 +120,50 @@
           ser mulher na luz, que contarão com janela de LIBRAS para garantir a
           acessibilidade da comunidade surda.
         </p>
+      </div>
+
+      <div id="videos" class="pagina esconder corpo">
+        <header id="titulos-video" class="linha centralizar">
+          <h1 class="subtitulo">Vídeos</h1>
+          <hr id="separador-videos" aria-hidden="true" />
+          <img
+            id="estrela-titulo-videos"
+            src="img/estrela_vazada.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </header>
+        <section class="grid">
+          <div class="card-videos">
+            <div id="conteiner-pergunta-videos" class="quadrado-grid">
+              <h2 id="pergunta-videos">Qual a história das mulheres que trabalham com luz?</h2>
+            </div>
+          </div>
+          <div class="card-videos">
+            <img id="poster-video-1" class="quadrado-grid" src="img/logos.png" alt="Poster do vídeo.">
+            <div class="linha between">
+              <h2 class="titulo-grid">Título do vídeo</h2>
+              <img class="seta-videos" src="img/seta.svg" alt="">
+            </div>
+              <p class="desc-grid">Descrição do vídeo</p>
+          </div>
+          <div class="card-videos">
+            <img id="poster-video-1" class="quadrado-grid" src="img/logos.png" alt="Poster do vídeo.">
+            <div class="linha between">
+              <h2 class="titulo-grid">Título do vídeo</h2>
+              <img class="seta-videos" src="img/seta.svg" alt="">
+            </div>
+              <p class="desc-grid">Descrição do vídeo</p>
+          </div>
+          <img
+            id="estrela-corpo-videos"
+            class="quadrado-grid"
+            src="img/estrela_vazada.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </section>
+
       </div>
 
       <div id="video" class="pagina esconder">
@@ -319,14 +358,24 @@
         class="item-menu"
         src="img/logo.svg"
         alt="Autobiografia de todas nós"
+        role="button"
+        tabindex="1"
       />
       <ul id="nav-menu" class="linha menu">
-        <li id="videos-menu" class="item-menu">Vídeos</li>
-        <li id="textos-menu" class="item-menu">Textos</li>
-        <li id="mapa-menu" class="item-menu">Mapeamento</li>
-        <li id="sobre-menu" class="item-menu">Sobre</li>
+        <li id="videos-menu" class="item-menu" role="button" tabindex="2">
+          Vídeos
+        </li>
+        <li id="textos-menu" class="item-menu" role="button" tabindex="3">
+          Textos
+        </li>
+        <li id="mapa-menu" class="item-menu" role="button" tabindex="4">
+          Mapeamento
+        </li>
+        <li id="sobre-menu" class="item-menu" role="button" tabindex="5">
+          Sobre
+        </li>
       </ul>
-      <img id="estrela-menu" src="img/estrela.svg" />
+      <img id="estrela-menu" src="img/estrela.svg" aria-hidden="true" />
     </nav>
 
     <!-- FUNDOS -->

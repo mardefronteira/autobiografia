@@ -39,6 +39,12 @@ ul {
   line-height: 1.5;
 }
 
+.centralizar {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
 .pagina {
   padding-top: 5vh;
   position: relative;
@@ -62,24 +68,25 @@ ul {
 }
 
 .titulo {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   padding: 0;
   margin: 0;
 }
 
 .subtitulo {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bolder;
+  display: inline;
 }
 
 .corpo {
-  font-size: 0.7em;
+  font-size: 0.7rem;
   line-height: 1.5;
 }
 
 .desc {
-  font-size: 0.6em;
+  font-size: 0.6rem;
 }
 
 /* FLEX */
@@ -119,7 +126,14 @@ ul {
 }
 .rotate-element {
   -webkit-animation: infiniteRotate 20s linear infinite; /* Safari */
-  animation: infiniteRotate 20s linear infinite;
+  animation: infinite-rotate 20s linear infinite;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -144,5 +158,9 @@ ul {
 
   .desc {
     font-size: 1.5em;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

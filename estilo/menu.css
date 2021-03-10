@@ -19,7 +19,8 @@
   cursor: pointer;
 }
 
-.item-menu:hover {
+.item-menu:hover,
+.item-menu:focus {
   opacity: 0.6;
 }
 

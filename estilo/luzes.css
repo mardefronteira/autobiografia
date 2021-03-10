@@ -12,10 +12,6 @@
   left: 0;
   right: 0;
   pointer-events: none;
-  /* width: 100vh; */
-  /* height: auto; */
-  /* overflow-x: hidden; */
-  /* overflow-y: auto; */
 }
 
 #inicial-fundo {
@@ -28,10 +24,6 @@
 }
 
 #luz-inicial-2 {
-}
-
-#mapa-fundo {
-  /* overflow-x: hidden; */
 }
 
 #luz-mapa-1 {
@@ -61,14 +53,13 @@
   right: 0;
 }
 
-#videos-fundo,
 #textos-fundo {
   height: 100vh;
   overflow: hidden;
 }
 
 #luz-videos-1 {
-  top: -60%;
+  top: -50vh;
 }
 
 @media screen and (max-width: 800px) {

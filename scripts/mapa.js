@@ -4,6 +4,7 @@ function mapa() {
     const imagem = document.createElement("IMG");
     imagem.src = `img/perfis/${perfil.id}/${perfil.fotos[0]}`;
     imagem.id = `pessoa-${perfil.id}`;
+    imagem.alt = perfil.nome;
     imagem.classList.add("img-mapa");
 
     // configurar clique
