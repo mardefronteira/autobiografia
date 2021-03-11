@@ -152,6 +152,10 @@ ul {
     margin: auto;
   }
 
+  .subtitulo {
+    font-size: 3rem;
+  }
+
   .corpo {
     font-size: 2em;
   }

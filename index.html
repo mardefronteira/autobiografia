@@ -45,7 +45,9 @@
     <link rel="stylesheet" href="estilo/luzes.css" />
     <link rel="stylesheet" href="estilo/menu.css" />
     <link rel="stylesheet" href="estilo/sobre.css" />
+    <link rel="stylesheet" href="estilo/texto.css" />
     <link rel="stylesheet" href="estilo/textos.css" />
+    <link rel="stylesheet" href="estilo/video.css" />
     <link rel="stylesheet" href="estilo/videos.css" />
   </head>
   <body>
@@ -123,7 +125,7 @@
       </div>
 
       <div id="videos" class="pagina esconder corpo">
-        <header id="titulos-video" class="linha centralizar">
+        <header id="titulos-videos" class="linha centralizar">
           <h1 class="subtitulo">Vídeos</h1>
           <hr id="separador-videos" aria-hidden="true" />
           <img
@@ -134,26 +136,39 @@
           />
         </header>
         <section class="grid">
-          <div class="card-videos">
+          <div class="">
             <div id="conteiner-pergunta-videos" class="quadrado-grid">
               <h2 id="pergunta-videos">Qual a história das mulheres que trabalham com luz?</h2>
             </div>
           </div>
-          <div class="card-videos">
-            <img id="poster-video-1" class="quadrado-grid" src="img/logos.png" alt="Poster do vídeo.">
+          <div id="video-0" class="card-videos" tabindex="0">
+            <img class="quadrado-grid" src="img/posters/entrevista_lucri.jpg" alt="Foto da iluminadora Lucri Reggiani">
             <div class="linha between">
-              <h2 class="titulo-grid">Título do vídeo</h2>
+              <h2 class="titulo-grid">Bate Papo com a Iluminadora Lucri Reggiani de Curitiba PR
+</h2>
               <img class="seta-videos" src="img/seta.svg" alt="">
             </div>
-              <p class="desc-grid">Descrição do vídeo</p>
+              <p class="desc-grid">
+              entrevistadora NINA ROSA SÁ<br/>
+              apoio CAROL WINTER<br/>
+              edição NADJA NAIRA<br/>
+              entrevista gravada via zoom em janeiro de 2021<br/>
+              duração 20 minutos<br/>
+              </p>
           </div>
-          <div class="card-videos">
-            <img id="poster-video-1" class="quadrado-grid" src="img/logos.png" alt="Poster do vídeo.">
+          <div id="video-1" class="card-videos" tabindex="0">
+            <img class="quadrado-grid" src="img/posters/entrevista_semy.jpg" alt="Foto da iluminadora Semy Monastier">
             <div class="linha between">
-              <h2 class="titulo-grid">Título do vídeo</h2>
+              <h2 class="titulo-grid">Bate Papo com a iluminadora Semy Monastier de Curitiba PR</h2>
               <img class="seta-videos" src="img/seta.svg" alt="">
             </div>
-              <p class="desc-grid">Descrição do vídeo</p>
+              <p class="desc-grid">
+              entrevistadora NINA ROSA SÁ<br/>
+              apoio CAROL WINTER<br/>
+              edição NADJA NAIRA<br/>
+              entrevista gravada via zoom em janeiro de 2021<br/>
+              duração 35 minutos<br/>
+              </p>
           </div>
           <img
             id="estrela-corpo-videos"
@@ -166,12 +181,30 @@
 
       </div>
 
+      <!-- VÍDEO -->
       <div id="video" class="pagina esconder">
-        <h1 class="titulo">Vídeo</h1>
+        <header id="titulos-video">
+          <h1 id="titulo-video" class="titulo"></h1>
+          <p id="desc-video" class="corpo"></p>
+        </header>
+        <div class="centralizar">
+          <img id="seta-video" class="noventa-graus" src="img/seta.svg" alt="" aria-hidden="true" >
+        </div>
+        <video id="elem-video" controls>
+          <source id="src-video" src="videos/entrevista_lucri.mp4" type="video/mp4">
+          <track id="legenda-video"
+            default
+            kind="captions"
+            srclang="pt-br"
+            src=""
+          />
+        </video>
       </div>
 
+      <!-- MAPA -->
       <div id="mapa" class="pagina esconder">
         <h1 class="subtitulo">Mapeamento</h1>
+        <p class="desc">Mapeamento das mulheres que trabalham com iluminação em Curitiba PR</p>
         <section id="fotos-mapa"></section>
         <div id="botao-form" class="centralizar">
           <a
@@ -391,6 +424,9 @@
     <div id="video-fundo" class="fundo esconder">
       <img id="luz-video-1" class="luz" src="img/luzes/video1.png" />
       <img id="luz-video-2" class="luz" src="img/luzes/video2.png" />
+      <figure id="conteiner-luz-video-3">
+        <img id="luz-video-3" class="luz" src="img/luzes/video3.png" />
+      </figure>
     </div>
 
     <div id="textos-fundo" class="fundo esconder">
@@ -405,7 +441,9 @@
     </div>
 
     <div id="mapa-fundo" class="fundo esconder">
-      <img id="luz-mapa-1" class="luz" src="img/luzes/mapa1.png" />
+      <figure id="conteiner-luz-mapa-1">
+        <img id="luz-mapa-1" class="luz" src="img/luzes/mapa1.png" />
+      </figure>
       <img id="luz-mapa-2" class="luz esconder" src="img/luzes/mapa2.png" />
     </div>
 
