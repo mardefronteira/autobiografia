@@ -1,7 +1,7 @@
 const videos = [
   {
     src: "entrevista_lucri.mp4",
-    poster: "entrevista_lucri.jpg",
+    poster: "entrevista_lucri.JPG",
     legenda: "entrevista_lucri.vtt",
     titulo: "Bate Papo com a Iluminadora Lucri Reggiani de Curitiba PR",
     desc: `entrevistadora NINA ROSA SÁ<br/>
@@ -13,7 +13,7 @@ const videos = [
   },
   {
     src: "entrevista_semy.mp4",
-    poster: "entrevista_semy.jpg",
+    poster: "entrevista_semy.JPG",
     legenda: "entrevista_semy.vtt",
     titulo: "Bate Papo com a iluminadora Semy Monastier de Curitiba PR",
     desc: `entrevistadora NINA ROSA SÁ<br/>

@@ -21,6 +21,8 @@ function selecionarItem(id) {
 }
 
 function esconderTudo() {
+  window.scrollTo(0, 0);
+
   // esconder todas as páginas
   const paginas = document.getElementsByClassName("pagina");
   for (let pagina of paginas) pagina.classList.add("esconder");
@@ -45,6 +47,4 @@ function mostrarPagina(id) {
   // localizar e mostrar página alvo e fundo
   document.querySelector(`#${id}`).classList.remove("esconder");
   document.querySelector(`#${id}-fundo`).classList.remove("esconder");
-
-  window.scrollTo(0, 0);
 }
