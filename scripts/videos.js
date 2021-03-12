@@ -32,7 +32,9 @@ function configurarVideos() {
     alvo.addEventListener("click", () => {
       document.querySelector("#src-video").src = `videos/${video.src}`;
       document.querySelector("#legenda-video").src = `videos/${video.legenda}`;
-      // document.querySelector("#elem-video").poster = `img/posters/${video.poster}`;
+      document.querySelector(
+        "#elem-video"
+      ).poster = `img/posters/${video.poster}`;
       document.querySelector("#titulo-video").innerHTML = video.titulo;
       document.querySelector("#desc-video").innerHTML = video.desc;
 
