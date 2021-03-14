@@ -1,17 +1,21 @@
-#titulos-videos {
+.titulos-conteudo {
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 0;
 }
 
-#separador-videos {
-  width: 80%;
+.separador-conteudo {
   height: 0;
-  /* display: inline; */
+  margin: 0 1vw;
+  padding: 0;
 }
 
-#estrela-titulo-videos {
+#separador-videos {
+  width: 80%;
+}
+
+.estrela-titulo-conteudo {
   width: 4%;
   height: auto;
 }
@@ -30,7 +34,7 @@
   line-height: 1;
 }
 
-.card-videos {
+.card-conteudo {
   cursor: pointer;
 }
 
@@ -71,7 +75,7 @@
     width: 60%;
   }
 
-  #estrela-titulo-videos {
+  .estrela-titulo-conteudo {
     width: 10%;
   }
 

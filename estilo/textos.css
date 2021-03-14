@@ -1,0 +1,33 @@
+.autora-textos {
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+#titulo-textos {
+  font-weight: bold;
+  font-size: 2.5rem;
+  display: block;
+  margin: 20vh 0;
+}
+
+#div-separador-textos {
+  width: 80%;
+  margin: 6vh auto;
+}
+
+#separador-textos {
+  width: 95%;
+}
+
+@media screen and (max-width: 800px) {
+  .autora-textos {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  #titulo-textos {
+    font-size: 3.5rem;
+    margin: 10vh 0;
+  }
+}

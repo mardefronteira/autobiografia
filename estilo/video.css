@@ -11,7 +11,7 @@
   line-height: 1.2;
 }
 
-#seta-video {
+.seta-conteudo {
   height: 4vh;
   margin: 10vh 0;
 }
@@ -38,14 +38,13 @@
     line-height: 1.5;
   }
 
-  #seta-video {
+  .seta-conteudo {
     height: 2.5vh;
-    margin: 15vh 0;
   }
 
   #elem-video {
     width: 100%;
     height: auto;
-    margin-bottom: 40vh;
+    margin-bottom: 20vh;
   }
 }
