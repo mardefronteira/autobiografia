@@ -35,6 +35,10 @@ function esconderTudo() {
   const video = document.querySelector("#elem-video");
   video.pause();
   video.load();
+
+  // pausar som
+  const audio = document.querySelector("#audio-texto");
+  audio.pause();
 }
 
 function mostrarPagina(id) {

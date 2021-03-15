@@ -17,6 +17,7 @@ body {
   color: var(--preto);
   text-align: left;
   line-height: 1;
+  overflow-x: hidden;
 }
 
 main {

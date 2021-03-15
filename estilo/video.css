@@ -17,8 +17,8 @@
 }
 
 #elem-video {
-  width: 100%;
-  height: auto;
+  height: 80vh;
+  width: auto;
   margin: 0;
 }
 
