@@ -20,7 +20,7 @@
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-D5FH0XLK3Q"
-    ></script>
+    async ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -38,17 +38,40 @@
       rel="stylesheet"
     />
 
+    <!-- COMPORTAMENTO -->
+    <script type="text/javascript" src="scripts/base.js"></script>
+    <script type="text/javascript" src="scripts/menu.js"></script>
+
+    <script type="text/javascript" src="scripts/mapa.js" async></script>
+    <script type="text/javascript" src="scripts/sobre.js" defer ></script>
+    <script type="text/javascript" src="scripts/textos.js" defer ></script>
+    <script type="text/javascript" src="scripts/videos.js" defer ></script>
+
+    <!-- DADOS -->
+    <script type="text/javascript" src="dados/perfis.js" async></script>
+    <script type="text/javascript" src="dados/textos.js" defer ></script>
+    <script type="text/javascript" src="dados/videos.js" defer ></script>
+
+
     <!-- FOLHAS DE ESTILO -->
     <link rel="stylesheet" href="estilo/base.css" />
     <link rel="stylesheet" href="estilo/inicial.css" />
-    <link rel="stylesheet" href="estilo/mapa.css" />
-    <link rel="stylesheet" href="estilo/luzes.css" />
     <link rel="stylesheet" href="estilo/menu.css" />
-    <link rel="stylesheet" href="estilo/sobre.css" />
-    <link rel="stylesheet" href="estilo/texto.css" />
-    <link rel="stylesheet" href="estilo/textos.css" />
-    <link rel="stylesheet" href="estilo/video.css" />
-    <link rel="stylesheet" href="estilo/videos.css" />
+
+    <link rel="preload" href="estilo/mapa.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo/mapa.css"></noscript>
+    <link rel="preload" href="estilo/luzes.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo/luzes.css"></noscript>
+    <link rel="preload" href="estilo/sobre.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo/sobre.css"></noscript>
+    <link rel="preload" href="estilo/texto.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo/texto.css"></noscript>
+    <link rel="preload" href="estilo/textos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo/textos.css"></noscript>
+    <link rel="preload" href="estilo/video.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo/video.css"></noscript>
+    <link rel="preload" href="estilo/videos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="estilo/videos.css"></noscript>
   </head>
   <body>
     <main>
@@ -210,7 +233,7 @@
           <img id="seta-video" class="noventa-graus seta-conteudo" src="img/seta.svg" alt="" aria-hidden="true" >
         </div>
         <div class="centralizar">
-        <video id="elem-video" controls>
+        <video id="elem-video" width="1280" height="720" controls>
           <source id="src-video" src="videos/entrevista_lucri.mp4" type="video/mp4">
           <track id="legenda-video"
             default
@@ -259,7 +282,7 @@
 
       <div id="sobre" class="pagina esconder">
         <section id="titulo-sobre" class="">
-          <img id="estrela-sobre" src="img/estrela.svg" />
+          <img id="estrela-sobre" width="200" height="200" src="img/estrela.svg" />
           <h1 class="titulo">Sobre<br />o<br />Projeto</h1>
           <img
             id="seta-1-sobre"
@@ -288,6 +311,7 @@
           <div class="centralizar">
             <img
               id="seta-2-sobre"
+              width="300"
               class="noventa-graus seta-sobre"
               src="img/seta.svg"
             />
@@ -296,6 +320,8 @@
           <div class="centralizar">
             <img
             id="circulo-sobre"
+            width="1000"
+            heigh="1000"
             class="circulo rotate-element"
             src="img/circulo_preto.svg"
             />
@@ -398,6 +424,7 @@
             <li>
               <img
                 id="logos"
+                width="1000"
                 src="img/logos.png"
                 alt="Logos dos apoiadores do projeto"
               />
@@ -411,6 +438,7 @@
     <nav id="menu" class="linha">
       <img
         id="inicial-menu"
+        width="300"
         class="item-menu"
         src="img/logo.svg"
         alt="Autobiografia de todas nós"
@@ -431,7 +459,7 @@
           Sobre
         </li>
       </ul>
-      <img id="estrela-menu" src="img/estrela.svg" aria-hidden="true" />
+      <img id="estrela-menu" width="200" width="200" src="img/estrela.svg" aria-hidden="true" />
     </nav>
 
     <!-- FUNDOS -->
@@ -475,18 +503,5 @@
       <img id="luz-sobre-2" class="luz" src="img/luzes/sobre2.png" />
       <img id="luz-sobre-3" class="luz" src="img/luzes/sobre3.png" />
     </div>
-
-    <!-- COMPORTAMENTO -->
-    <script type="text/javascript" src="scripts/base.js"></script>
-    <script type="text/javascript" src="scripts/mapa.js"></script>
-    <script type="text/javascript" src="scripts/menu.js"></script>
-    <script type="text/javascript" src="scripts/sobre.js"></script>
-    <script type="text/javascript" src="scripts/textos.js"></script>
-    <script type="text/javascript" src="scripts/videos.js"></script>
-
-    <!-- DADOS -->
-    <script type="text/javascript" src="dados/perfis.js"></script>
-    <script type="text/javascript" src="dados/textos.js"></script>
-    <script type="text/javascript" src="dados/videos.js"></script>
   </body>
 </html>

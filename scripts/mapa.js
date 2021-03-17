@@ -2,6 +2,7 @@ function mapa() {
   for (let perfil of perfis) {
     // criar imagem de perfil
     const imagem = document.createElement("IMG");
+    imagem.width = "500";
     imagem.src = `img/perfis/${perfil.id}/${perfil.fotos[0]}`;
     imagem.id = `pessoa-${perfil.id}`;
     imagem.alt = perfil.nome;
