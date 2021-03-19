@@ -1,23 +1,25 @@
 let itensMenu;
 let mapaAberto = false;
 
-function configurarMenu() {
-  itensMenu = document.getElementsByClassName("item-menu");
-  for (let item of itensMenu) {
-    const id = item.id.slice(0, -5);
-    item.addEventListener("click", (e) => selecionarItem(e.target.id));
-  }
-}
+// function configurarMenu() {
+//   console.log(itensMenu);
+//   for (let item of itensMenu) {
+//     const id = item.id.slice(0, -5);
+//     item.addEventListener("click", (e) => selecionarItem(e.target.id));
+//   }
+// }
 
 function selecionarItem(id) {
+  const itensMenu = document.getElementsByClassName("item-menu");
   // deselecionar itens do menu
   for (let item of itensMenu) item.classList.remove("negrito");
   // negritar item do menu
-  document.querySelector(`#${id}`).classList.add("negrito");
+
+  id ? document.querySelector(`#${id}`).classList.add("negrito") : "";
 
   // esconder todas as páginas, mostrar a selecionada
-  esconderTudo();
-  mostrarPagina(id.slice(0, -5));
+  // esconderTudo();
+  // mostrarPagina(id.slice(0, -5));
 }
 
 function esconderTudo() {
@@ -31,7 +33,11 @@ function esconderTudo() {
   const fundos = document.getElementsByClassName("fundo");
   for (let fundo of fundos) fundo.classList.add("esconder");
 
-  // pausar vídeo
+  // pausar vídeos
+  const apresentacao = document.querySelector("#apresentacao");
+  apresentacao.pause();
+  apresentacao.load();
+
   const video = document.querySelector("#elem-video");
   video.pause();
   video.load();
@@ -42,6 +48,7 @@ function esconderTudo() {
 }
 
 function mostrarPagina(id) {
+  esconderTudo();
   const menu = document.querySelector("#menu");
   // adicionar fundo opaco ao menu
   id === "inicial"

@@ -5,8 +5,10 @@ let mouse = {
   y: 0,
 };
 
+let primeiroLoad = true;
+
 function iniciar() {
-  configurarMenu();
+  // configurarMenu();
   configurarVideos();
   configurarTextos();
 
@@ -41,4 +43,6 @@ function iniciar() {
   videoApresentação.addEventListener("ended", () => {
     videoApresentação.load();
   });
+
+  primeiroLoad = false;
 }

@@ -41,6 +41,7 @@
     <!-- COMPORTAMENTO -->
     <script type="text/javascript" src="scripts/base.js"></script>
     <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="scripts/router.js"></script>
 
     <script type="text/javascript" src="scripts/mapa.js" async></script>
     <script type="text/javascript" src="scripts/sobre.js" defer ></script>
@@ -75,6 +76,7 @@
   </head>
   <body>
     <main>
+      <router-outlet></router-outlet>
       <div id="inicial" class="pagina">
         <section class="conteudo coluna">
           <video
@@ -84,7 +86,6 @@
             poster="img/logo.svg"
             preload="auto"
             controls
-            autoplay
           />
           <source src="videos/apresentação.mp4" type="video/mp4">
             <track
@@ -115,7 +116,7 @@
           </div>
         </header>
         <section class="grid">
-          <div id="texto-0" class="card-conteudo" tabindex="0">
+          <a href="#texto-0" id="texto-0" class="card-conteudo" tabindex="0">
             <img class="quadrado-grid" src="img/posters/ensaio_gabriela.jpg" alt="Ilustração" aria-hidden="true">
             <div class="linha between">
               <h2 class="titulo-grid">a história de quem agiu no breu</h2>
@@ -125,7 +126,7 @@
               <p class="desc">
               O ensaio traça uma narrativa autobiográfica para repensar como a memória coletiva das/sobre as mulheres ao longo da história interfere nos desejos e também no que as mulheres imaginam para si e para o mundo. É um convite para, a partir das histórias individuais, pensarmos sobre o que conecta as mulheres de hoje.
               </p>
-          </div>
+          </a>
         </section>
       </div>
 
@@ -172,42 +173,42 @@
               <h2 id="pergunta-videos">Qual a história das mulheres que trabalham com luz?</h2>
             </div>
           </div>
-          <div id="video-0" class="card-conteudo" tabindex="0">
+          <a href="#video-0" id="video-0" class="card-conteudo" tabindex="0">
             <img class="quadrado-grid" src="img/posters/depoisdenos.jpg" alt="A iluminadora Nadia Luciani em frame do MiniDOC" aria-hidden="true">
             <div class="linha between">
               <h2 class="titulo-grid">DEPOIS DE NÓS</h2>
               <img class="seta-videos" src="img/seta.svg" alt="" aria-hidden="true">
             </div>
             <p class="desc-grid">Seis mulheres iluminadoras, de diferentes gerações, falam sobre os percalços, evoluções tecnológicas, espaços afetivos, relações com técnicos homens e equipes de mulheres. E sobre suas visões sobre o passado, o presente e o futuro.</p>
-          </div>
-          <div id="video-1" class="card-conteudo" tabindex="0">
+          </a>
+          <a href="#video-1" id="video-1" class="card-conteudo" tabindex="0">
             <img class="quadrado-grid" src="img/posters/entrevista_lucri.JPG" alt="A iluminadora Lucri Reggiani em frame da entrevista" aria-hidden="true">
             <div class="linha between">
               <h2 class="titulo-grid">Bate Papo com a Iluminadora Lucri Reggiani de Curitiba PR</h2>
               <img class="seta-videos" src="img/seta.svg" alt="" aria-hidden="true">
             </div>
-          </div>
-          <div id="video-2" class="card-conteudo" tabindex="0">
+          </a>
+          <a href="#video-2" id="video-2" class="card-conteudo" tabindex="0">
             <img class="quadrado-grid" src="img/posters/entrevista_semy.JPG" alt="A iluminadora Semy Monastier em frame da entrevista" aria-hidden="true">
             <div class="linha between">
               <h2 class="titulo-grid">Bate Papo com a iluminadora Semy Monastier de Curitiba PR</h2>
               <img class="seta-videos" src="img/seta.svg" alt="" aria-hidden="true">
             </div>
-          </div>
-          <div id="video-3" class="card-conteudo" tabindex="0">
+          </a>
+          <a href="#video-3" id="video-3" class="card-conteudo" tabindex="0">
             <img class="quadrado-grid" src="img/posters/entrevista_gabriela.JPG" alt="A iluminadora  em frame do MiniDOC" aria-hidden="true">
             <div class="linha between">
               <h2 class="titulo-grid">Bate Papo com a Iluminadora Gabriela Valcanaia de Curitiba PR</h2>
               <img class="seta-videos" src="img/seta.svg" alt="" aria-hidden="true">
             </div>
-          </div>
-          <div id="video-4" class="card-conteudo" tabindex="0">
+          </a>
+          <a href="#video-4" id="video-4" class="card-conteudo" tabindex="0">
             <img class="quadrado-grid" src="img/posters/entrevista_fabia.JPG" alt="A iluminadora Fábia Regina em frame da entrevista" aria-hidden="true">
             <div class="linha between">
               <h2 class="titulo-grid">Bate Papo com a Iluminadora Fábia Regina de Curitiba PR</h2>
               <img class="seta-videos" src="img/seta.svg" alt="" aria-hidden="true">
             </div>
-          </div>
+          </a>
 
           <div></div>
           <img
@@ -434,27 +435,29 @@
 
     <!-- MENU -->
     <nav id="menu" class="linha">
-      <img
-        id="inicial-menu"
-        width="300"
-        class="item-menu"
-        src="img/logo.svg"
-        alt="Autobiografia de todas nós"
-        role="button"
-        tabindex="1"
-      />
+      <a href="/#" id="inicial-menu-conteiner">
+        <img
+          id="inicial-menu"
+          width="300"
+          class="item-menu"
+          src="img/logo.svg"
+          alt="Autobiografia de todas nós"
+          role="button"
+          tabindex="1"
+        >
+      </a>
       <ul id="nav-menu" class="linha menu">
-        <li id="videos-menu" class="item-menu" role="button" tabindex="2">
-          Vídeos
+        <li id="videos-menu" class="item-menu" role="button">
+          <a href="#videos" tabindex="2">Vídeos</a>
         </li>
-        <li id="textos-menu" class="item-menu" role="button" tabindex="3">
-          Textos
+        <li id="textos-menu" class="item-menu" role="button">
+          <a href="#textos" tabindex="3">Textos</a>
         </li>
-        <li id="mapa-menu" class="item-menu" role="button" tabindex="4">
-          Mapeamento
+        <li id="mapa-menu" class="item-menu" role="button">
+          <a href="#mapa" tabindex="4">Mapeamento</a>
         </li>
-        <li id="sobre-menu" class="item-menu" role="button" tabindex="5">
-          Sobre
+        <li id="sobre-menu" class="item-menu" role="button">
+          <a href="#sobre" tabindex="5">Sobre</a>
         </li>
       </ul>
       <img id="estrela-menu" width="200" width="200" src="img/estrela.svg" aria-hidden="true" />
@@ -470,7 +473,7 @@
       <img id="luz-videos-1" class="luz" src="img/luzes/videos1.png" />
     </div>
 
-    <div id="video-fundo" class="fundo esconder">
+    <div  id="video-fundo" class="fundo esconder">
       <img id="luz-video-1" class="luz" src="img/luzes/video1.png" />
       <img id="luz-video-2" class="luz" src="img/luzes/video2.png" />
       <figure id="conteiner-luz-video-3">

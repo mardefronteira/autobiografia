@@ -20,6 +20,12 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
 main {
   position: absolute;
   top: 15vh;

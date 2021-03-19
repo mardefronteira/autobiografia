@@ -24,10 +24,17 @@
   opacity: 0.6;
 }
 
-#inicial-menu {
+#inicial-menu-conteiner {
   height: 90%;
   width: auto;
   margin: 1vh 5vw;
+}
+
+#inicial-menu {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
 
 #estrela-menu {
@@ -41,10 +48,10 @@
 }
 
 @media screen and (max-width: 800px) {
-  #inicial-menu {
+  #inicial-menu-conteiner {
+    margin: 2% 5%;
     height: 90%;
     width: auto;
-    margin: 2% 5%;
   }
 
   #menu {
