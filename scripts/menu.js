@@ -1,14 +1,6 @@
 let itensMenu;
 let mapaAberto = false;
 
-// function configurarMenu() {
-//   console.log(itensMenu);
-//   for (let item of itensMenu) {
-//     const id = item.id.slice(0, -5);
-//     item.addEventListener("click", (e) => selecionarItem(e.target.id));
-//   }
-// }
-
 function selecionarItem(id) {
   const itensMenu = document.getElementsByClassName("item-menu");
   // deselecionar itens do menu
@@ -50,6 +42,7 @@ function esconderTudo() {
 function mostrarPagina(id) {
   esconderTudo();
   const menu = document.querySelector("#menu");
+
   // adicionar fundo opaco ao menu
   id === "inicial"
     ? menu.classList.remove("fundo-menu")

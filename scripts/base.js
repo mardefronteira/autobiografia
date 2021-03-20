@@ -8,10 +8,6 @@ let mouse = {
 let primeiroLoad = true;
 
 function iniciar() {
-  // configurarMenu();
-  configurarVideos();
-  configurarTextos();
-
   mapa();
 
   window.addEventListener("mousemove", (e) => {

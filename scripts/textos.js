@@ -1,13 +1,3 @@
-function configurarTextos() {
-  // for (let texto of textos) {
-  //   const i = textos.indexOf(texto);
-  //   console.log(i, texto.titulo);
-  //   const alvo = document.querySelector(`#texto-${i}`);
-  //   alvo.addEventListener("click",
-  //   });
-  // }
-}
-
 function mostrarTexto(texto) {
   document.querySelector("#src-audio-texto").src = `audios/${texto.audio}`;
   document.querySelector("#audio-texto").load();

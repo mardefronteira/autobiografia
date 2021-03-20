@@ -17,11 +17,9 @@ function displayHash() {
 }
 
 window.addEventListener("hashchange", function () {
-  // console.log("hashchange event");
   displayHash();
 });
 
 window.addEventListener("DOMContentLoaded", function (ev) {
-  // console.log("DOMContentLoaded event");
   displayHash();
 });
