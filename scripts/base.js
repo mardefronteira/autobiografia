@@ -6,9 +6,10 @@ let mouse = {
 };
 
 let primeiroLoad = true;
+let load = 0;
 
 function iniciar() {
-  mapa();
+  mapaAberto ? "" : mapa();
 
   window.addEventListener("mousemove", (e) => {
     e = e || window.event;
@@ -39,6 +40,5 @@ function iniciar() {
   videoApresentação.addEventListener("ended", () => {
     videoApresentação.load();
   });
-
   primeiroLoad = false;
 }
