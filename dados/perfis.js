@@ -339,7 +339,7 @@ const perfis = [
     legendas: [
       "",
       "“Veenstra” na Sonora Cena (2015). Foto: Jorge Mariano.",
-      "“Bface” na Transa Atlântica (2018). Foto: Richardyson.",
+      "“Bface” na Transa Atlântica (2018). Foto: Richardyson Marafon Trochmann.",
       "“As plantas em minha pele criam raízes em minha carne” (2014). Foto: Pedro Doinel.",
     ],
     contato:
