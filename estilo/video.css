@@ -16,7 +16,7 @@
   margin: 10vh 0;
 }
 
-#elem-video {
+#elem-video, #elem-iframe {
   max-height: 80vh;
   max-width: 100%;
   margin: 0;
